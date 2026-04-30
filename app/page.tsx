@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const handleClick = () => {
@@ -34,15 +35,21 @@ export default function Home() {
           <p className="text-white/70 text-base md:text-xl animate-[pulse-text_2.5s_ease-in-out_infinite]">
             Ayo Belajar sambil Bermain bersama.
           </p>
-          <button className="w-full sm:w-auto relative overflow-hidden card-shine bg-[#195B94] hover:bg-[#124e82] border-3 border-[#124e82] text-white px-8 py-3 rounded-xl shadow-lg transition animate-[breathe_2s_ease-in-out_infinite] cursor-pointer">
-            Mulai Skrining
-          </button>
-          <button className="w-full sm:w-auto relative overflow-hidden card-shine bg-[#195B94] hover:bg-[#124e82] border-3 border-[#124e82] text-white px-8 py-3 rounded-xl shadow-lg transition animate-[breathe_2s_ease-in-out_infinite_0.3s] cursor-pointer">
-            Lihat Dashboard
-          </button>
-          <button className="w-full sm:w-auto relative overflow-hidden card-shine bg-[#195B94] hover:bg-[#124e82] border-3 border-[#124e82] text-white px-8 py-3 rounded-xl shadow-lg transition animate-[breathe_2s_ease-in-out_infinite_0.6s] cursor-pointer">
-            Mulai Belajar
-          </button>
+          <Link href="/screening">
+            <button className="w-full sm:w-auto relative overflow-hidden card-shine bg-[#195B94] hover:bg-[#124e82] border-3 border-[#124e82] text-white px-8 py-3 rounded-xl shadow-lg transition animate-[breathe_2s_ease-in-out_infinite] cursor-pointer">
+              Mulai Skrining
+            </button>
+          </Link>
+          <Link href="/dashboard">
+            <button className="w-full sm:w-auto relative overflow-hidden card-shine bg-[#195B94] hover:bg-[#124e82] border-3 border-[#124e82] text-white px-8 py-3 rounded-xl shadow-lg transition animate-[breathe_2s_ease-in-out_infinite] cursor-pointer">
+              Lihat Dashboard
+            </button>
+          </Link>
+          <Link href="/study">
+            <button className="w-full sm:w-auto relative overflow-hidden card-shine bg-[#195B94] hover:bg-[#124e82] border-3 border-[#124e82] text-white px-8 py-3 rounded-xl shadow-lg transition animate-[breathe_2s_ease-in-out_infinite] cursor-pointer">
+              Mulai Belajar
+            </button>
+          </Link>
         </div>
       </div>
     </div>
