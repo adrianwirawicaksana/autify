@@ -8,7 +8,7 @@ const Page = () => {
       <div className="w-full max-w-6xl bg-white shadow-lg overflow-hidden">
         
         {/* Header */}
-        <div className="flex flex-col bg-amber-50 md:flex-row items-center gap-6 p-6 md:p-10 border-b border-gray-200">
+        <div className="flex flex-col bg-amber-50 md:flex-row items-center justify-center gap-6 p-6 md:p-10 border-b border-gray-200">
           <div className="w-40 md:w-56">
             <Image
               src="/images/Parent.webp"
