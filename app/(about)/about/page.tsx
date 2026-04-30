@@ -6,7 +6,7 @@ import { useTeamName } from "./_hooks/useTeamName";
 import { usePasswordModal } from "./_hooks/usePasswordModal";
 import { MemberCard, TeamHeader, PasswordModal } from "./_components";
 
-export default function AboutPage() {
+const Page = () => {
   const { members, loadingIndex, updateMember, fetchMembers, saveMember } =
     useMembers();
 
@@ -84,3 +84,5 @@ export default function AboutPage() {
     </>
   );
 }
+
+export default Page

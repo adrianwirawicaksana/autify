@@ -1,6 +1,7 @@
 "use client";
 
 import toast from "react-hot-toast";
+import Image from "next/image";
 import type { Member } from "../_types/member";
 import { formatLink, getUsername } from "../_utils/formatters";
 import { AvatarAnimationStyles } from "./AvatarAnimationStyles";
@@ -54,10 +55,13 @@ export function MemberCard({
             <VipBadge />
             <div className="avatar-rgb-inner bg-amber-900 flex items-center justify-center text-white text-4xl font-bold">
               {member.photo ? (
-                <img
+                <Image
                   src={member.photo}
                   alt={member.name}
+                  width={140}
+                  height={140}
                   className="w-full h-full object-cover"
+                  priority
                 />
               ) : (
                 member.name.charAt(0)
@@ -67,10 +71,13 @@ export function MemberCard({
         ) : (
           <div className="w-35 h-35 bg-amber-900 rounded-full border-2 border-gray-300 flex items-center justify-center overflow-hidden text-white text-4xl font-bold">
             {member.photo ? (
-              <img
+              <Image
                 src={member.photo}
                 alt={member.name}
+                width={140}
+                height={140}
                 className="w-full h-full object-cover"
+                priority
               />
             ) : (
               member.name.charAt(0)
