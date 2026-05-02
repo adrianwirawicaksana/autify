@@ -25,7 +25,7 @@ const Navbar = () => {
 
         {/* DESKTOP MENU */}
         <div className="hidden md:flex items-center gap-8 text-sm text-white/80">
-          <Link href="/screening" className="hover:text-white transition">
+          <Link href="/screening/form" className="hover:text-white transition">
             Skrining
           </Link>
           <Link href="/about" className="hover:text-white transition">
@@ -81,7 +81,7 @@ const Navbar = () => {
         `}
       >
         <div className="px-6 pb-6 pt-4 bg-[#0f2f33]/95 backdrop-blur-md border-t border-white/10 flex flex-col gap-4">
-          <Link href="/screening" onClick={() => setOpen(false)}>
+          <Link href="/screening/form" onClick={() => setOpen(false)}>
             Skrining
           </Link>
           <Link href="/about" onClick={() => setOpen(false)}>

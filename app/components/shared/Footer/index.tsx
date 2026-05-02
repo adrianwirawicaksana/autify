@@ -17,7 +17,7 @@ const Footer = () => {
         {/* CENTER */}
         <div className="flex flex-col gap-2 text-sm">
           <h2 className="text-white font-semibold">Navigasi</h2>
-          <Link href="/screening" className="hover:text-white transition cursor-pointer">Skrining</Link>
+          <Link href="/screening/form" className="hover:text-white transition cursor-pointer">Skrining</Link>
           <Link href="/about" className="hover:text-white transition cursor-pointer">Tentang Kami</Link>
           <Link href="/guide" className="hover:text-white transition cursor-pointer">Panduan Orang Tua</Link>
         </div>
