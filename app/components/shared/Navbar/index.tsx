@@ -44,7 +44,7 @@ const Navbar = () => {
             <div className="flex items-center gap-3">
               {/* 🔥 WRAPPER FIX CENTER */}
               <div className="w-10 h-10 flex items-center justify-center">
-                <div className="scale-150 flex items-center hover:scale-160 transition">
+                <div className="scale-130 flex items-center hover:scale-140 transition">
                   <UserButton />
                 </div>
               </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
             </div>
           ) : (
             <SignInButton mode="modal">
-              <button className="px-5 py-2 rounded-xl bg-[#f15b5b] text-[#0f2f33] font-semibold hover:bg-[#d94c4c] transition shadow-md">
+              <button className="px-5 py-2 rounded-xl bg-[#f15b5b] border-3 border-[#d94c4c] text-[#0f2f33] font-semibold hover:bg-[#d94c4c] transition shadow-md">
                 Login
               </button>
             </SignInButton>

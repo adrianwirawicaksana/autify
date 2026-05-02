@@ -33,7 +33,7 @@ export default function Home() {
             Autify App
           </h1>
           <p className="text-white/70 text-base md:text-xl animate-[pulse-text_2.5s_ease-in-out_infinite]">
-            Ayo Belajar sambil Bermain bersama.
+            Mari tumbuh bersama Autify.
           </p>
           <Link href="/screening">
             <button className="w-full sm:w-auto relative overflow-hidden card-shine bg-[#195B94] hover:bg-[#124e82] border-3 border-[#124e82] text-white px-8 py-3 rounded-xl shadow-lg transition animate-[breathe_2s_ease-in-out_infinite] cursor-pointer">

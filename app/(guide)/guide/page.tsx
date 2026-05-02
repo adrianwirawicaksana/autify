@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Page = () => {
   return (
-    <div className="min-h-screen w-full text-gray-800 flex items-center justify-center">
+    <div className="min-h-screen w-full text-gray-800 flex items-center justify-center md:pt-8 lg:pt-9">
       <div className="w-full max-w-6xl bg-white shadow-lg overflow-hidden">
         
         {/* Header */}
